@@ -13,6 +13,58 @@ header,
   box-shadow: none;
 }
 
+/* ---------- Dark variant for landing / error pages ---------- */
+/* Usage: add `theme-darb-dark` class to `body` to enable */
+.theme-darb-dark {
+  --color-primary: #007c83; /* teal */
+  --color-primary-d: #006268;
+  --color-primary-l: #2aa6ad;
+  --color-primary-reverse: #ffffff;
+  --color-text: #d9d9d9;
+  --main-text-color: #ffffff;
+  --color-beige: #2f3334; /* page background for dark look */
+  --color-gold: #0aa6a3; /* accent */
+  --color-gold-dark: #088c88;
+  --color-border-soft: rgba(255,255,255,0.04);
+  --bg-gray: #2f3334;
+
+  background-color: var(--color-beige);
+  color: var(--main-text-color);
+
+  /* specific large 404/hero look matching provided screenshot */
+  .page-hero, .error-404 {
+    background: transparent;
+    color: var(--main-text-color);
+    text-align: center;
+    padding: 6rem 1rem;
+  }
+
+  .error-404 .code {
+    font-size: 7rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+
+  .error-404 .message {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--main-text-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .error-404 .sub {
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 1.25rem;
+  }
+
+  .brand-mark {
+    max-width: 140px;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+}
+
 .main-header .navbar,
 .main-header nav {
   padding-top: 1.25rem;
