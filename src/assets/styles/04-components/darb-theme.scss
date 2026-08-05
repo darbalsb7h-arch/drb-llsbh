@@ -1,0 +1,117 @@
+/*
+ * درب — Modern Minimal Theme Overrides
+ * Warm beige + gold accents, generous whitespace, quiet elegance.
+ * Kept as a single override file (loaded last) so it never fights the
+ * base Theme Raed styles or breaks Twig/Alpine logic in the templates.
+ */
+
+/* ---------- Header ---------- */
+header,
+.main-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--color-border-soft);
+  box-shadow: none;
+}
+
+.main-header .navbar,
+.main-header nav {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.main-header a,
+.main-header .icon {
+  color: var(--main-text-color);
+}
+
+.main-header .cart-icon,
+.main-header .s-header-icon {
+  transition: color .2s ease;
+}
+.main-header .cart-icon:hover,
+.main-header .s-header-icon:hover {
+  color: var(--color-gold);
+}
+
+/* ---------- Footer ---------- */
+footer,
+.footer {
+  background-color: var(--color-beige);
+  border-top: 1px solid var(--color-border-soft);
+  color: var(--color-text);
+}
+
+.footer a {
+  color: var(--main-text-color);
+}
+.footer a:hover {
+  color: var(--color-gold);
+}
+
+.footer .social-icons a {
+  border: 1px solid var(--color-border-soft);
+  background: #ffffff;
+}
+
+/* ---------- Buttons ---------- */
+.btn-primary,
+button.btn,
+.s-button-primary {
+  background-color: var(--color-gold);
+  border-color: var(--color-gold);
+  border-radius: .75rem;
+  letter-spacing: .01em;
+  transition: background-color .2s ease, transform .15s ease;
+}
+.btn-primary:hover,
+button.btn:hover,
+.s-button-primary:hover {
+  background-color: var(--color-gold-dark);
+}
+
+/* ---------- Home sections ---------- */
+.home-blocks,
+.home-section {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.home-section-title,
+.section-title {
+  font-weight: 600;
+  color: var(--main-text-color);
+  letter-spacing: .01em;
+}
+
+/* ---------- Product cards ---------- */
+.product-card,
+.s-product-card-entry {
+  background: #ffffff;
+  border: 1px solid var(--color-border-soft);
+  border-radius: 1rem;
+  box-shadow: none;
+  transition: box-shadow .25s ease, transform .25s ease;
+}
+.product-card:hover,
+.s-product-card-entry:hover {
+  box-shadow: 0 10px 30px rgba(43, 36, 32, .08);
+  transform: translateY(-2px);
+}
+
+.product-card .price,
+.s-product-card-entry .price {
+  color: var(--color-gold-dark);
+  font-weight: 600;
+}
+
+/* ---------- Banners / sliders ---------- */
+.banner,
+.hero-slider {
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+/* ---------- Section dividers ---------- */
+.divider-soft {
+  border-color: var(--color-border-soft);
+}
